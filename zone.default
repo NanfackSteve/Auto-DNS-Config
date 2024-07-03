@@ -1,0 +1,10 @@
+zone "domain_name" IN {
+    type master;
+    file "/etc/bind/domain_file";
+};
+
+zone "ip_net_reverse.in-addr.arpa" {
+    type master;
+    notify no;
+    file "/etc/bind/domaine_revert_file";
+};
